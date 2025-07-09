@@ -1,0 +1,186 @@
+/* styles.css ou dentro do seu componente */
+.forgot-password-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.forgot-password-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.forgot-password-header h1 {
+  color: #2d3748;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.forgot-password-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.step-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+
+.step-number {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e2e8f0;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.step-number.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.step-name {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.step-name.active {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.progress-line {
+  position: absolute;
+  height: 2px;
+  background-color: #e2e8f0;
+  top: 18px;
+  left: 10%;
+  right: 10%;
+  z-index: 1;
+}
+
+.progress-line-fill {
+  height: 100%;
+  background-color: #3b82f6;
+  transition: width 0.3s ease;
+}
+
+.forgot-password-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-size: 0.875rem;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.form-control {
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-secondary {
+  background-color: #f1f5f9;
+  color: #334155;
+}
+
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+}
+
+.verification-code-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.verification-input {
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.helper-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.success-message {
+  color: #10b981;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Responsividade */
+@media (max-width: 640px) {
+  .forgot-password-container {
+    margin: 1rem;
+    padding: 1.5rem;
+  }
+  
+  .verification-input {
+    width: 40px;
+    height: 50px;
+  }
+}
