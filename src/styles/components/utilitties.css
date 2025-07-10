@@ -1,0 +1,14 @@
+/* src/styles/components/utilities.css */
+.text-center { text-align: center; }
+.text-error { color: var(--error-color); }
+.text-success { color: var(--success-color); }
+
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-4 { margin-top: var(--spacing-md); }
+.mt-6 { margin-top: var(--spacing-lg); }
+.mt-8 { margin-top: var(--spacing-xl); }
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }

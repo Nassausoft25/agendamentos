@@ -1,0 +1,7 @@
+/* src/styles/index.css */
+@import './global.css';
+@import './components/buttons.css';
+@import './components/forms.css';
+@import './components/navbar.css';
+@import './components/cards.css';
+@import './components/utilities.css';

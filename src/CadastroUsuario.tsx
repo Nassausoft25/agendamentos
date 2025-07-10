@@ -1,7 +1,5 @@
 // CadastroUsuario.tsx - Tela de Cadastro
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-
 
 const CadastroUsuario: React.FC = () => {
   const [nome, setNome] = useState('');
