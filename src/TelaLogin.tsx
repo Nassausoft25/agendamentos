@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './styles/dashboard.css';
+import "../styles/cadastro.css"; // em CadastroUsuario.tsx
+import "../styles/login.css";    // em TelaLogin.tsx
+import "../styles/recuperarSenha.css"; 
+
 const TelaLogin: React.FC = () => {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');

@@ -1,6 +1,8 @@
 // Dashboard.tsx
 import './styles/dashboard.css';
-
+import "../styles/cadastro.css"; // em CadastroUsuario.tsx
+import "../styles/login.css";    // em TelaLogin.tsx
+import "../styles/recuperarSenha.css"; 
 function Dashboard() {
     return (
         <div className="dashboard-container">

@@ -1,6 +1,10 @@
 // RecuperarSenha.tsx - Tela de recuperação de senha
 import React, { useState } from 'react';
 import './styles/dashboard.css';
+import "../styles/cadastro.css"; // em CadastroUsuario.tsx
+import "../styles/login.css";    // em TelaLogin.tsx
+import "../styles/recuperarSenha.css"; 
+
 const RecuperarSenha: React.FC = () => {
   const [etapa, setEtapa] = useState(1);
   const [emailOuTelefone, setEmailOuTelefone] = useState('');

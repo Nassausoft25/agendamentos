@@ -1,6 +1,9 @@
 // CadastroUsuario.tsx - Tela de Cadastro
 import React, { useState } from 'react';
 import './styles/dashboard.css';
+import "../styles/cadastro.css"; // em CadastroUsuario.tsx
+import "../styles/login.css";    // em TelaLogin.tsx
+import "../styles/recuperarSenha.css"; 
 const CadastroUsuario: React.FC = () => {
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
