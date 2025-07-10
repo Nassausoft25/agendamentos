@@ -1,3 +1,4 @@
+/* Dashboard CSS com tons de azul claro e botões centralizados e maiores */
 
 body {
   margin: 0;
@@ -46,57 +47,65 @@ body {
 .search-bar {
   width: 100%;
   max-width: 500px;
-  padding: 12px 20px;
+  padding: 14px 22px;
   border-radius: 16px;
   border: none;
   background-color: #cbe6ff;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 1.05rem;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-title {
   font-weight: 600;
-  margin: 24px 0 12px;
+  margin: 24px auto 12px;
   background-color: #b9dcff;
   display: inline-block;
-  padding: 6px 14px;
-  border-radius: 8px;
-  font-size: 1.1rem;
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 /* Cards de Consulta */
 .card-consulta {
   background-color: #d9ecff;
-  padding: 20px;
+  padding: 24px;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 280px;
+  gap: 10px;
+  width: 300px;
   margin-right: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 .card-consulta-row {
   display: flex;
+  justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card-consulta h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .card-consulta small {
   color: #33657b;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .btn-agendar {
-  padding: 6px 12px;
-  font-size: 0.9rem;
+  padding: 10px 18px;
+  font-size: 1rem;
   background-color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
@@ -109,28 +118,30 @@ body {
 .profissionais-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .card-profissional {
   background-color: #b9dcff;
-  padding: 16px;
+  padding: 20px;
   border-radius: 24px;
-  width: 180px;
+  width: 200px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 .card-profissional h4 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .card-profissional small {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #33657b;
 }
 
@@ -138,9 +149,9 @@ body {
   margin-top: auto;
   background-color: white;
   border: none;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 0.85rem;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
