@@ -1,7 +1,7 @@
 // PaginaInicial.tsx - Página Inicial com botões de Login e Cadastro
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import './styles/dashboard.css';
 const PaginaInicial: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">

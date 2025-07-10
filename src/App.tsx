@@ -5,6 +5,11 @@ import PaginaInicial from './PaginaInicial';
 import TelaLogin from './TelaLogin';
 import CadastroUsuario from './CadastroUsuario';
 import RecuperarSenha from './RecuperarSenha';
+import './styles/dashboard.css';
+import Dashboard from './Dashboard';
+
+// ...
+<Route path="/dashboard" element={<Dashboard />} />
 
 const App: React.FC = () => {
   return (
