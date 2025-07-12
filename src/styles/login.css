@@ -1,19 +1,11 @@
-/* src/styles/login.css */
 .login-container {
-  width: 100%;
   max-width: 400px;
   margin: 60px auto;
   padding: 30px;
-  background: white;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
-
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
 .login-container input {
   width: 100%;
   padding: 10px;
@@ -21,7 +13,11 @@
   border-radius: 6px;
   border: 1px solid #ccc;
 }
-
+.login-container .options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
 .login-container button {
   width: 100%;
   padding: 12px;
@@ -32,20 +28,34 @@
   margin-top: 10px;
   cursor: pointer;
 }
-
-.login-container button:hover {
-  background-color: #357ab8;
-}
-
-.login-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.login-container button:hover { background-color: #357ab8; }
+.login-container a { color: #4a90e2; text-decoration: none; }
+.login-container a:hover { text-decoration: underline; }
+.login-container .error {
+  color: red;
+  font-size: 0.9rem;
   margin-top: 10px;
 }
-
-.login-options a {
+.login-container .success {
+  color: green;
   font-size: 0.9rem;
-  color: #4a90e2;
-  text-decoration: none;
+  margin-top: 10px;
+}
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #33657b;
+}
+.login-container .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.login-container .logo img {
+  width: 100px;
+  height: auto;
+}
+.login-container .logo img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
 }

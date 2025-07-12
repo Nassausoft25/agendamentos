@@ -1,45 +1,133 @@
-/* src/styles/global.css */
-:root {
-  /* Cores */
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
-  --secondary-color: #f1f5f9;
-  --text-color: #1e293b;
-  --error-color: #dc2626;
-  --success-color: #16a34a;
-  
-  /* Espaçamentos */
-  --spacing-xs: 0.25rem;
-  --spacing-sm: 0.5rem;
-  --spacing-md: 1rem;
-  --spacing-lg: 1.5rem;
-  --spacing-xl: 2rem;
-  
-  /* Bordas */
-  --border-radius: 8px;
-  --border-width: 1px;
-  
-  /* Sombras */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-}
-
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Inter', system-ui, sans-serif;
-  line-height: 1.5;
-  background-color: #f8fafc;
-  color: var(--text-color);
+body, html, #root {
+  min-height: 100vh;
+  background: #f3f4f6;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.container {
+/* Centralização flexível */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+/* Espaçamento e largura */
+.min-h-screen {
+  min-height: 100vh;
+}
+.p-4 {
+  padding: 1rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+.w-full {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
+}
+.max-w-sm {
+  max-width: 24rem;
+}
+
+/* Cores e fundos */
+.bg-gray-100 {
+  background: #f3f4f6;
+}
+.bg-white {
+  background: #fff;
+}
+.bg-blue-600 {
+  background: #2563eb;
+}
+.bg-green-600 {
+  background: #16a34a;
+}
+.text-white {
+  color: #fff;
+}
+
+/* Bordas e sombras */
+.rounded {
+  border-radius: 0.5rem;
+}
+.shadow-md {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Tipografia */
+.text-center {
+  text-align: center;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.font-bold {
+  font-weight: bold;
+}
+
+/* Botões */
+button {
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+
+button:active {
+  opacity: 0.9;
+}
+
+.hover\:bg-blue-700:hover {
+  background: #1d4ed8;
+}
+.hover\:bg-green-700:hover {
+  background: #15803d;
+}
+/* ...existing code... */
+
+/* Alinhamento dos checkboxes e textos */
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checkbox-row label {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.checkbox-row input[type="checkbox"] {
+  margin-right: 0.5rem;
+  accent-color: #2563eb;
+}
+
+/* Alinhar o link de "Esqueceu sua senha?" à direita */
+.login-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }

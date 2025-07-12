@@ -1,40 +1,88 @@
-/* src/styles/cadastro.css */
 .cadastro-container {
   max-width: 600px;
   margin: 50px auto;
-  background: white;
   padding: 30px;
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
 }
-
-.cadastro-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.cadastro-container form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 .cadastro-container input {
+  width: 100%;
   padding: 10px;
+  margin: 8px 0;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 1rem;
 }
-
 .cadastro-container button {
+  width: 100%;
   padding: 12px;
   background-color: #4a90e2;
   color: white;
   border: none;
   border-radius: 8px;
+  margin-top: 10px;
   cursor: pointer;
 }
-
-.cadastro-container button:hover {
-  background-color: #357ab8;
+.cadastro-container button:hover { background-color: #357ab8; }
+.cadastro-container a {
+  color: #4a90e2;
+  text-decoration: none;
+}
+.cadastro-container a:hover {
+  text-decoration: underline;
+}
+.cadastro-container .error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.cadastro-container .success {
+  color: green;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+.cadastro-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #33657b;
+}
+.cadastro-container .logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.cadastro-container .logo img {
+  width: 100px;
+  height: auto;
+}
+.cadastro-container .logo img:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+.cadastro-container .logo img:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease;
+}
+.cadastro-container .logo img:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.cadastro-container .logo img:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.cadastro-container .logo img:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.cadastro-container .logo img:active:focus {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.cadastro-container .logo img:active:focus-visible {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.cadastro-container .logo img:active:focus:not(:focus-visible) {
+  transform: scale(0.95);
+  box-shadow: none;
 }

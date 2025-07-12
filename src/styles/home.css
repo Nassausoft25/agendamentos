@@ -1,43 +1,120 @@
-/* src/styles/home.css */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f3f6fb;
-}
-
 .home-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  text-align: center;
 }
-
-h1 {
-  font-size: 2rem;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
 .nav-buttons {
   display: flex;
-  gap: 10px;
+  gap: 15px;
 }
-
-.nav-buttons button {
+button {
   padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
   background-color: #4a90e2;
-  color: white;
+  color: #fff;
+  border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background 0.3s;
 }
-
-.nav-buttons button:hover {
+button:hover {
   background-color: #357ab8;
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.logo {
+  margin-bottom: 20px;
+}
+.logo img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+.logo img:hover {
+  transform: scale(1.05);
+}
+.logo img:active {
+  transform: scale(0.95);
+}
+.logo img:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+.logo img:active:focus {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:active:focus-visible {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:active:focus:not(:focus-visible) {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+.logo img:focus-visible:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:active:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:active:focus {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:active:focus-visible {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:active:focus:not(:focus-visible) {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+.logo img:focus-visible:hover:active {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:hover:active:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:hover:active:focus {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:hover:active:focus-visible {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:hover:active:focus:not(:focus-visible) {
+  transform: scale(0.95);
+  box-shadow: none;
+}
+.logo img:focus-visible:hover:active:hover:focus {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:hover:active:hover:focus-visible {
+  transform: scale(0.95);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.5);
+}
+.logo img:focus-visible:hover:active:hover:focus:not(:focus-visible) {
+  transform: scale(0.95);
+  box-shadow: none;
 }
